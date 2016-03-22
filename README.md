@@ -8,6 +8,9 @@ You spend your whole day in your IDE -- why leave to generate documentation?  Pa
 
 Include tables and images just like a regular markdown file.  Add page numbers and date stamps just like a typical Word document.  Deliver them to your customer without ever clicking that _W_.
 
+![Pandomime Document Generator](pandomine-example.gif)
+
+
 ## Requirements
 
 Pandomine uses `pandoc` for document conversion. You can grab it at [pandoc.org](http://pandoc.org/).
@@ -21,7 +24,7 @@ Run `generate_docs.sh` from the any directory.  It will drill down into all subd
 1. Find any files named `README.md`
 2. Extract out the first __First Level Header (#)__ in the document to use as the document title.
 3. Generate a DOCX file by combining the markdown from the file and formatting from the reference document specified in the configuration.
-4. Save the DOCX file in the specified document subdirectory from configuration using the name extracted above.
+4. Save the DOCX file in the document subdirectory specified in configuration using the name extracted above.
 5. Continue on to the next `README.md` file.
 
 ## Configuration
