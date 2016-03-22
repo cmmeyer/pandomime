@@ -21,7 +21,7 @@ Run `generate_docs.sh` from the any directory.  It will drill down into all subd
 1. Find any files named `README.md`
 2. Extract out the first __First Level Header (#)__ in the document to use as the document title.
 3. Generate a DOCX file by combining the markdown from the file and formatting from the reference document specified in the configuration.
-4. Save the DOCX file in the document subdirectory specified in configuration using the name extracted above.
+4. Save the DOCX file in the specified document subdirectory from configuration using the name extracted above.
 5. Continue on to the next `README.md` file.
 
 ## Configuration
