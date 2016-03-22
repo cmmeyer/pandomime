@@ -10,6 +10,13 @@ Include tables and images just like a regular markdown file.  Add page numbers a
 
 ![Pandomime Document Generator](pandomine-example.gif)
 
+## Demo
+
+1. Install pandoc.
+2. Clone this repo.
+3. Run `./generate-docs.sh`
+4. Pandomime finds three README.md files and generates docs.
+5. View your fresh, new DOCX files in the docs/ directory.
 
 ## Requirements
 
