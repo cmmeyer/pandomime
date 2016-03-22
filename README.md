@@ -10,6 +10,12 @@ Include tables and images just like a regular markdown file.  Add page numbers a
 
 ![Pandomime Document Generator](pandomine-example.gif)
 
+## Requirements
+
+Pandomine uses `pandoc` for document conversion. You can grab it at [pandoc.org](http://pandoc.org/).
+
+`pandoc` uses a reference template when generating the DOCX files.  This is an existing DOCX file that has the desired formatting including headers and footers.  When constructing this file, make sure any date fieldss are configured to update automatically.  Without a reference template, `pandoc` uses the default document settings for Word.
+
 ## Demo
 
 1. Install pandoc.
@@ -17,12 +23,6 @@ Include tables and images just like a regular markdown file.  Add page numbers a
 3. Run `./generate-docs.sh`
 4. Pandomime finds three README.md files and generates docs.
 5. View your fresh, new DOCX files in the docs/ directory.
-
-## Requirements
-
-Pandomine uses `pandoc` for document conversion. You can grab it at [pandoc.org](http://pandoc.org/).
-
-`pandoc` uses a reference template when generating the DOCX files.  This is an existing DOCX file that has the desired formatting including headers and footers.  When constructing this file, make sure any date fieldss are configured to update automatically.  Without a reference template, `pandoc` uses the default document settings for Word.
 
 ## How It Works
 
