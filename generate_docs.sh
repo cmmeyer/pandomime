@@ -44,7 +44,7 @@ else
       printf "    Converting from markdown to docx...\n"
       #printf "${pandoc_path} -i \"${markdown_file}\" -o \"${document_dir}/${title}.docx\" -f markdown -t docx --reference-docx=${reference_docx} --smart\n"
       cd $file_path
-      ${pandoc_path} -i README.md -o "${cwd}/${document_dir}/${title}.docx" -f markdown -t docx --reference-docx="${cwd}/${reference_path}" --smart
+      ${pandoc_path} -i README.md -o "${cwd}/${document_dir}/${title}.docx" -f markdown -t docx --reference-docx="${reference_path}" --smart
       cd $cwd
       printf "    Generated ${document_dir}/${title}.docx.\n"
     else
